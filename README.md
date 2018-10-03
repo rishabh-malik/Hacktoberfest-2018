@@ -8,7 +8,7 @@ You can use this repo so as to create your first PR for hacktoberfest.
 
 # Getting Started
 
-- Fork this repo (button on top)
+- Fork and star this repo (button on top)
 
 - Clone on your local machine.
 
