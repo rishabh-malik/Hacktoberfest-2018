@@ -9,7 +9,6 @@ struct node
 
 struct node* create_node(struct node* parent)   // Creates a node and returns it's pointer
 {
-    
     struct node *temp = (struct node*)malloc(sizeof(struct node));
     temp->left_child = NULL;
     temp->right_child = NULL;
@@ -34,9 +33,7 @@ void insert(struct node* root, int key)        // Insert a key to the given bina
         temp->key = key;
         return;
     }
-    
-    
-
+  
     if(root->left_child!= NULL && (key < root->key))
         return insert(root->left_child, key);
     else
@@ -73,7 +70,3 @@ int main()
     int k = findMin(&tree_root);
     printf("Minumum is %d\n",k );
 }
-
-
-
-
