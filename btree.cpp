@@ -3,13 +3,12 @@
 
 struct node
 {
-    struct node *left_child,*right_child,*parent;
+    struct node *left_child,*right_child,*parent; 
     int key;
 };
 
 struct node* create_node(struct node* parent)   // Creates a node and returns it's pointer
 {
-
     struct node *temp = (struct node*)malloc(sizeof(struct node));
     temp->left_child = NULL;
     temp->right_child = NULL;
@@ -34,13 +33,11 @@ void insert(struct node* root, int key)        // Insert a key to the given bina
         temp->key = key;
         return;
     }
-
-
-
+  
     if(root->left_child!= NULL && (key < root->key))
         return insert(root->left_child, key);
     else
-        return insert(root->right_child, key);
+        return insert(root->right_child, key); 
 }
 
 int findMin( struct node* root)         //Will return the minimum value (does not delete that node)
@@ -63,10 +60,10 @@ int main()
     FILE *data;
     data = fopen("~/datastructures-and-algorithms/data","r+");
     while (!feof (data))
-    {
+    {  
       int num;
       fscanf (data, "%d ", &num);
-      insert(&tree_root,num);
+      insert(&tree_root,num);      
     }
 
     fclose(data);
