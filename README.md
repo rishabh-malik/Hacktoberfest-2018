@@ -8,21 +8,21 @@ You can use this repo so as to create your first PR for hacktoberfest.
 
 # Getting Started
 
-1. Fork this repo (button on top)
+- Fork this repo (button on top)
 
-2. Clone on your local machine
+- Clone on your local machine.
 
-3.Create a new branch
+- Create a new branch
 
 ```markdown
 git checkout -b my-new-branch
 ```
 
-4. Create a new folder with the name of the programming language you want to contribute in.
+- Create a new folder with the name of the programming language you want to contribute in.
 
-5. Add your algorithm file in that folder.
+- Add your algorithm file in that folder.
 
-6. Commit and push
+- Commit and push
 
 ```markdown
 git add .
@@ -30,8 +30,8 @@ git commit -m 'Hello World in my language'
 git push origin my-new-branch
 ```
 
-7. Create a new pull request from your forked repository
+- Create a new pull request from your forked repository
 
-8. Your PR gets merged! 🎃
+- Your PR gets merged! 🎃
 
 Now you can help others do the same.
