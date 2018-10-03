@@ -2,15 +2,18 @@
 #include<conio.h>
 void main()
 {
-clrscr();
-int num,fact=1;
-cout<<"enter an integer";
-cin>>num;
-while (num)
-{
-fact=fact*num;
---num;
+  int num;
+  cout<<"enter the digit";
+  cin>>num;
+  int fct=fact(num);
+  cout>>"factorial is ">>fct;
 }
-cout<<"res="<<fact;
-getch();
+int fact(int a)
+{
+  int n=1;
+  while(a)
+  {
+    n=n*fact(--a);
+  }
+ return n;
 }
