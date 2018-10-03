@@ -4,7 +4,7 @@ You can use this repo so as to create your first PR for hacktoberfest.
 
 # Guidelines
 1. Create a folder for a programming language.
-2. Add algorithms to that folder for
+2. Add algorithms to that folder for that particular programming language.
 
 # Getting Started
 
