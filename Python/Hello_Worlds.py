@@ -1,5 +1,6 @@
-hello_world = ["こんにちは世界", "salve Orbis Terrarum", "Hello World", "Hello Wêreld", "Përshendetje Botë", "مرحبا بالعالم", "你好，世界", "Ahoj světe",
-                 "Bonjour le monde", "Hallo Welt", "Ciao mondo", "Witaj świecie", "Привет мир", "Hallo Wereld"]
+hello_world = ["こんにちは世界", "salve Orbis Terrarum", "Hello World", "Hello Wêreld", "Përshendetje Botë", "مرحبا بالعالم", 
+               "你好，世界", "Ahoj světe", "Bonjour le monde", "Hallo Welt", "Ciao mondo", "Witaj świecie", "Привет мир", 
+               "Hallo Wereld", "Olá mundo"]
 # Hello World in different languages
 
 for hello in hello_world:
