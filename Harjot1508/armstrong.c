@@ -1,12 +1,11 @@
-#include <iostream>
+#include <stdio.h>
 #include <math.h>
-using namespace std;
 
 int main()
 {
   int num, temp1,temp2, rem, sum=0,dgt=0;
-  cout << "Enter a positive  integer: ";
-  cin >> num;
+  printf("Enter a positive  integer: ");
+  scanf("%d",num);
 
   temp1 = num;
   temp2 = num;
@@ -28,9 +27,9 @@ int main()
   }
 
   if (sum==num)
-    {cout << num << " is an Armstrong number.";}
+      printf("%d is an Armstrong number.",num);
   else
-    cout << num << " is not an Armstrong number.";
+      printf("%d is not an Armstrong number.",num);
 
   return 0;
 }
