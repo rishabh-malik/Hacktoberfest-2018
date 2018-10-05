@@ -1,5 +1,0 @@
-#Printing Hello World in Python. 
-name = ["Helen"]
-
-for name in name:
-    print "Hello World!\n"
