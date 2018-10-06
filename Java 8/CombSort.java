@@ -1,5 +1,3 @@
-package bubbleSortVariations;
-
 /**
  * This algorithm applies a modified bubble sort. At first, it will iterate over
  * the array comparing elements separated by a gap (size / 1.25), swapping them

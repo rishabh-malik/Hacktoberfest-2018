@@ -1,5 +1,3 @@
-package bubbleSortVariations;
-
 /**
  * This algorithm applies two bubblesorts simultaneously. In a same iteration, a
  * bubblesort pushes the greatest elements to the end of the array and another

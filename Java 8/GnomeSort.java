@@ -1,5 +1,3 @@
-package bubbleSortVariations;
-
 /**
  * This algorithm applies a modified insertion sort. It compares adjacent
  * elements through the array. Whenever it finds an element out of order, this
