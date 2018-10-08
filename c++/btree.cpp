@@ -33,7 +33,7 @@ void insert(struct node* root, int key)        // Insert a key to the given bina
         temp->key = key;
         return;
     }
-
+  
     if(root->left_child!= NULL && (key < root->key))
         return insert(root->left_child, key);
     else
