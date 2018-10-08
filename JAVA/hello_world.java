@@ -1,6 +1,12 @@
 class Test 
-{
+{	
+	String str;
 	public static void main(String args[]) {
-		System.out.println("Hello World!");
+		Test t=new Test();
+		greetings("Hello World");
+	}
+	static void greetings(String str)
+	{
+		System.out.println(str);
 	}
 }
