@@ -1,3 +1,4 @@
+
 function fizzbuzz(num) {
   for (let i = 1; i <= num; i++) {
     if (i % 15 === 0) {
@@ -12,4 +13,4 @@ function fizzbuzz(num) {
       console.log(i)
     }
   }
-}
+}.
