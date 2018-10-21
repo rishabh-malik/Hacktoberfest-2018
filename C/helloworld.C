@@ -5,7 +5,9 @@
 
 int main()
 {
-  printf("Hello World!");
-  
+  printf("Hello User");
+  printf("In this program you can se the best sentence of all");
+  printf("The beloved and famous");
+  printf("HELLOW WORLD!");
   return 0;
 } 
