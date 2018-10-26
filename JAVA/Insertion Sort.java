@@ -12,7 +12,7 @@ class InsertionSort
   
             /* Move elements of arr[0..i-1], that are 
                greater than key, to one position ahead 
-               of their current position */
+               of their current position, utilizing a while loop */
             while (j>=0 && arr[j] > key) 
             { 
                 arr[j+1] = arr[j]; 
