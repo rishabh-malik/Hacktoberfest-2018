@@ -7,7 +7,7 @@ def volPrism():
     
     vol = edge1 * edge2 * edge3
     
-    print("Prism volume is: " + vol)
+    print("Volume is: " + vol)
     
     return vol
     
