@@ -31,3 +31,4 @@ git push
 - Your PR gets merged! 🎃
 
 Now you can help others do the same.
+Now you can help others do the same.
