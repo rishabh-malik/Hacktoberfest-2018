@@ -5,7 +5,7 @@ def volCube():
     
     vol = edge**3
     
-    print("Cube volume is " + vol)
+    print("Volume is " + vol)
     
     return vol
     
