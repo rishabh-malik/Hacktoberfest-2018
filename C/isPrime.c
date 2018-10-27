@@ -2,6 +2,8 @@
 #include <stdint.h>
 
 
+uint32 isPrime(unsigned int number)
+
 int main(void)
 {
 	printf("Check if number is prime");
@@ -14,7 +16,7 @@ int main(void)
 }
 
 
-uint32 isPrime(unsigned int number)
+uint_32 isPrime(unsigned int number)
 {
 
 
@@ -22,4 +24,5 @@ uint32 isPrime(unsigned int number)
 	{
 
 	}
+	return 0;
 }
