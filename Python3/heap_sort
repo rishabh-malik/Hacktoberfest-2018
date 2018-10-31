@@ -1,0 +1,10 @@
+from heapq import heappush, heappop
+
+def heap_sort(heap_iterable):
+    '''
+    Heap sort implementation
+    '''
+    heap = []
+    for val in heap_iterable:
+        heappush(heap, val)
+    return [heappop(heap) for _ in range(len(heap))]
