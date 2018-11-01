@@ -1,0 +1,45 @@
+let items = [
+  "rock",
+  "paper",
+  "scissors"
+];
+
+let pcChoice = items[Math.floor(Math.random()*items.length)];
+let invalid = " "
+let winner = " "
+
+let myItem = prompt("Please enter rock, paper or scissors");
+myItem = myItem.toLowerCase();
+
+
+if (myItem != "rock" && myItem != "paper" && myItem != "scissors"){
+  invalid = "Please choose from rock, paper or scissors!"
+
+//ties
+}else if (pcChoice == "rock" && myItem == "rock"){
+winner = "Tie!"
+}else if (pcChoice == "paper" && myItem == "paper"){
+winner = "Tie!"
+}else if (pcChoice == "scissors" && myItem == "scissors"){
+winner = "Tie!"
+
+//pc chooses rock
+}else if (pcChoice == "rock" && myItem == "paper"){
+winner = "You win!"
+}else if (pcChoice == "rock" && myItem == "scissors"){
+winner = "PC wins!"
+//pc chooses scissors
+}else if (pcChoice == "scissors" && myItem == "paper"){
+winner = "PC wins!"
+}else if (pcChoice == "scissors" && myItem == "rock"){
+winner = "You win!"
+//pc chooses paper
+}else if (pcChoice == "paper" && myItem == "rock"){
+winner = "PC wins!"
+}else if (pcChoice == "paper" && myItem == "scissors"){
+winner = "You win!"
+}
+ 
+console.log("You chose " + myItem + " and PC chose " + pcChoice + ".");
+console.log(winner)
+console.log(invalid)
