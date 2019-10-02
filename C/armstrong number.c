@@ -1,4 +1,9 @@
-/*Check Armstrong Number of n digits*/
+/*Check Armstrong Number of n digits
+Given a number x, determine whether the given number is Armstrong number or not. A positive integer of n digits is called an Armstrong number of order n (order is number of digits) if.
+
+abcd... = pow(a,n) + pow(b,n) + pow(c,n) + pow(d,n) + .... 
+
+*/
 #include <stdio.h>
 #include <math.h>
 
