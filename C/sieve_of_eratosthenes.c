@@ -27,7 +27,6 @@ int main() {
             }
         }
     }
-
     // print all prime numbers from 1 to 100
     printf("\nPrinting all prime numbers from 1 to 100:\n");
 
@@ -36,8 +35,5 @@ int main() {
             printf("%d  ", i);
         }
     }
-
-    printf("\n");
-
     return 0;
 }
