@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+
+int gcd(int first,int second){
+        if(second==0)
+          return first;
+        else
+          return gcd(second,first%second);
+    }
+    
+int main(){
+  int first,second;
+  cout<<"Enter two numbers"<<endl;
+  cin>>first>>second;
+  int answer=gcd(first,second);
+   cout<<"The GCD of the numbers is"<<answer<<endl;
+}
