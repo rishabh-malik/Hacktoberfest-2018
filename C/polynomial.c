@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-
+//sakshi made this
 struct Node
 {
     int coeff;
