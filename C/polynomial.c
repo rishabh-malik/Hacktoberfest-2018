@@ -1,6 +1,10 @@
 #include<stdio.h>
 #include<stdlib.h>
+<<<<<<< HEAD
 //created by sakshi
+=======
+//sakshi made this
+>>>>>>> 6268c1a35dcc2ca735282d9472474a3f66946661
 struct Node
 {
     int coeff;
