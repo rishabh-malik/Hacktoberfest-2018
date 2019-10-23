@@ -12,7 +12,7 @@ NODE * deleven(NODE*);
 NODE * create(NODE*);
 NODE * Delend(NODE*);
 void display(NODE*);
-//NODE * insertstart(NODE *start);
+NODE * insertstart(NODE *start);
 //void insertend(NODE *start);
 //void insertmiddle(NODE *start, int n);
 
@@ -25,7 +25,7 @@ void main()
 	//start = deleven(start);
 	start = Delend(start);
     display(start);
-//	insertend(start);
+	insertend(start);
 //	printf("After inserting at the end, \n");
 //	display(start);
 //	start=insertstart(start);
@@ -146,7 +146,7 @@ void display(NODE *start){
 	}while(start!=temp);
 }
 
-/*void insertend(NODE *start)
+void insertend(NODE *start)
 {
 	printf("Enter an element at the end of the linked list : \n");
 
@@ -164,7 +164,7 @@ void display(NODE *start){
 	newnode->next=NULL;
 }
 
-/*NODE * insertstart(NODE *start)
+NODE * insertstart(NODE *start)
 {
 	printf("Enter an element at the beginning of the linked list : \n");
 
