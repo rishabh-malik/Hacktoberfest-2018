@@ -180,7 +180,7 @@ void display(NODE *start){
 
 	return start;
 }*/
-
+//testing
 /*void insertmiddle(NODE *start, int n)
 {
 	NODE *newnode;
