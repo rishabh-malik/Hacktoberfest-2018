@@ -1,38 +1,32 @@
 #include <stdio.h>
-void Selectionsort(int a[], int n);
-int main() {
-    int n, i;
-    printf("How many elements?");
-    scanf("%d", &n);
-    int a[n];
-    printf("\nEnter array elements:");
+#include <stdlib.h>
 
-    for (i = 0; i < n; i++){
-        scanf("%d", &a[i]);
-    }
-
-    Selectionsort(a, n);
-
-    printf("\nArray after sorting:");
-
-    for (i = 0; i < n; i++) {
-        printf("%d ", a[i]);
-    }
-    printf("\n");
-    return 0;
+void selection_sort(int *v, int n){
+	//localiza o menor elemento
+	int aux, menor;
+	for(int i = 0; i < n; i++){
+		menor = i;
+		for(int j = i+1; j < n; j++)
+		{	
+			if(v[j] < v[menor]){
+			menor = j;
+			}
+		}
+		//faz o swap
+		aux = v[i];
+		v[i] = v[menor];
+		v[menor] = aux;
+	}
 }
 
-void Selectionsort(int a[], int n){
-    int min, h;
-    for (int j = 1; j < n; j++) {
-        min = j;
-        for (int i = j+1; i < n; i++) {
-            if(a[i]<a[min]) {
-                min = i;
-            }
-        }
-        h = a[min];
-        a[min] = a[j];
-        a[j] = h;
-    }
+int main(){
+	
+	int vetor[5] = {3, 1, 4, 2, 5};
+	selection_sort(vetor, 5);
+	
+	for (int i = 0; i < 5; i++){
+		printf("V[%d] = %d\n", i, vetor[i]);
+	}
+	
+	return 0;
 }

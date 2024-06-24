@@ -1,8 +1,12 @@
-#include<stdio.h>
-#include<conio.h>
-void main()
+#include <stdio.h>
+
+// Simple hello world program
+// Build with
+// gcc -o hello_world hello_world.c
+// and run with
+// ./hello_world
+int main(void)
 {
-  clrscr();
-  printf("Hello my World S2 !");
-  getch();
+    printf("Hello the best World ever!\n");
+    return 0;
 }
