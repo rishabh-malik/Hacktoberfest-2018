@@ -1,0 +1,74 @@
+using UnityEngine;
+using System.Collections;
+ 
+public class StairWayToWalkWay : MonoBehaviour
+{
+    public GameObject CubePrefab;
+ 
+    public void Start()
+    {
+        CreateStairs();
+        CreateWalkWay();
+        CreateUppderWalkWay();
+    }
+ 
+    public void CreateStairs()
+    {
+        int y = 0;
+        int z = 5;
+        for (int x = 5; x > 0; x--)
+        {
+            if (x == 5)
+            {
+                y = 0;
+                GameObject.Instantiate(CubePrefab, new Vector3(x, y, z), Quaternion.identity);
+            }
+ 
+            if (x == 4)
+            {
+                y = 1;
+                GameObject.Instantiate(CubePrefab, new Vector3(x, y, z), Quaternion.identity);
+            }
+ 
+            if (x == 3)
+            {
+                y = 2;
+                GameObject.Instantiate(CubePrefab, new Vector3(x, y, z), Quaternion.identity);
+            }
+ 
+            if (x == 2)
+            {
+                y = 3;
+                GameObject.Instantiate(CubePrefab, new Vector3(x, y, z), Quaternion.identity);
+            }
+ 
+            if (x == 1)
+            {
+                y = 4;
+                GameObject.Instantiate(CubePrefab, new Vector3(x, y, z), Quaternion.identity);
+            }
+ 
+            if (x == 0)
+            {
+                y = 5;
+                GameObject.Instantiate(CubePrefab, new Vector3(x, y, z), Quaternion.identity);
+            }
+        }
+    }
+ 
+    public void CreateWalkWay()
+    {
+        for (int x = 5; x < 10; x++)
+        {
+            GameObject.Instantiate(CubePrefab, new Vector3(x, 0, 5), Quaternion.identity);
+        }
+    }
+ 
+    public void CreateUppderWalkWay()
+    {
+        for (int x = -5; x < 1; x++)
+        {
+            GameObject.Instantiate(CubePrefab, new Vector3(x, 5, 5), Quaternion.identity);
+        }
+    }
+}
