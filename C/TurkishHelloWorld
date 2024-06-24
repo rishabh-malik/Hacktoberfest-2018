@@ -1,0 +1,10 @@
+// This tutorial is designed to get an output for hello world in Turkish.
+// Following comments will be Turkish.
+// Hoşgeldiniz!
+#include <stdio.h>  // Bu satır bizim basit işlemleri gerçekleştirmek için kullandığımız bir kütüphane. Standard input output
+int main()  // Ana fonksiyonumuz main, buradan çalışır.
+{ 
+   printf("Merhaba D%cnya!",129);  // printf komutu çıktı için kullanılır. print function anlamına gelir. Ü için ascii kod numarası kullanılır.
+   
+   return 0; // programın başarılı bir şekilde bittiğini belirtir
+}
